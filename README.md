@@ -5,7 +5,7 @@ This is my solution to the [Blog preview card challenge on Frontend Mentor](http
 ## 🚀 Live Demo
 
 You can view the deployed version of this project here:
-👉 **[Live Site URL]()**
+👉 **[Live Site URL](https://paulofm-r.github.io/blog-preview-card/)**
 
 ---
 
@@ -25,8 +25,8 @@ You can view the deployed version of this project here:
 ### The Challenge
 
 Users should be able to:
--- Se the optimal layout depending on their device's screen size (Mobile and Desktop).
--- See hover and focus states for all interactive elements on the page (such as the card title).
+- Se the optimal layout depending on their device's screen size (Mobile and Desktop).
+- See hover and focus states for all interactive elements on the page (such as the card title).
 
 ### Screenshot
 #### Desktop
