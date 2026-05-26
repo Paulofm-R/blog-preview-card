@@ -1,0 +1,134 @@
+:root {
+    /* Colors */
+    --color-yellow: hsl(47, 88%, 63%);
+    --color-gray500: hsl(0, 0%, 42%);
+    --color-gray950: hsl(0, 0%, 7%);
+
+    /* Sizes */
+    --size-desktop: 1440px;
+    --size-mobile: 375px;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url(./assets/fonts/static/Figtree-ExtraBold.ttf) format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+body {
+    background-color: var(--color-yellow);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    padding: 24px;
+}
+
+.card {
+    width: 100%;
+    max-width: 327px;
+    height: auto;
+    border: 3px solid var(--color-gray950);
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px 0px var(--color-gray950);
+    background-color: white;
+    padding: 24px;
+}
+
+
+.publication-description {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.card>img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.publication-type {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: var(--color-yellow);
+    font-weight: 800;
+    font-size: 0.75rem;
+    border-radius: 8%;
+    margin-bottom: 15px
+}
+
+.publication-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.publication-title>a{
+    text-decoration: none;
+    color: black;
+}
+
+.publication-title:hover {
+    color: var(--color-yellow);
+    cursor: pointer;
+}
+
+
+.publisher {
+    display: flex;
+    align-items: center;
+}
+
+.publisher>img {
+    width: 32px;
+    height: 32px;
+}
+
+.publisher>strong {
+    margin-left: 12px;
+    font-size: 0.875rem;
+}
+
+/* --- MEDIA QUERY TO DESKTOP */
+@media (min-width: 768px) {
+    .card {
+        max-width: 384px;
+        box-shadow: 16px 16px 0px 0px var(--color-gray950);
+    }
+
+    .publication-description {
+        font-size: 1rem;
+    }
+
+    .publication-title {
+        font-size: 1.5rem;
+    }
+}
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
