@@ -3,10 +3,6 @@
     --color-yellow: hsl(47, 88%, 63%);
     --color-gray500: hsl(0, 0%, 42%);
     --color-gray950: hsl(0, 0%, 7%);
-
-    /* Sizes */
-    --size-desktop: 1440px;
-    --size-mobile: 375px;
 }
 
 @font-face {
@@ -27,11 +23,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Figtree", sans-serif;
 }
 
 body {
     background-color: var(--color-yellow);
+    font-family: "Figtree", sans-serif;
 }
 
 main {
@@ -48,7 +44,7 @@ main {
     height: auto;
     border: 3px solid var(--color-gray950);
     border-radius: 20px;
-    box-shadow: 8px 8px 0px 0px var(--color-gray950);
+    box-shadow: 7px 7px 0px 0px var(--color-gray950);
     background-color: white;
     padding: 24px;
 }
@@ -79,17 +75,19 @@ main {
 .publication-title {
     font-size: 1.05rem;
     font-weight: 800;
-    margin: 5px 0;
+    margin: 15px 0;
 }
 
-.publication-title>a{
+.publication-title>a {
     text-decoration: none;
     color: black;
 }
 
-.publication-title>a:hover {
+.publication-title>a:hover,
+.publication-title>a:focus {
     color: var(--color-yellow);
     cursor: pointer;
+    text-decoration: underline  ;
 }
 
 
@@ -111,8 +109,8 @@ main {
 /* --- MEDIA QUERY TO DESKTOP */
 @media (min-width: 768px) {
     .card {
-        max-width: 384px;
-        box-shadow: 16px 16px 0px 0px var(--color-gray950);
+        max-width: 400px;
+        box-shadow: 10px 10px 0px 0px var(--color-gray950);
     }
 
     .publication-description {
